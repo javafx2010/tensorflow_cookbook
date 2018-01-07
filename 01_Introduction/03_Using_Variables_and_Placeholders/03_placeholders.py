@@ -17,8 +17,5 @@ y = tf.identity(x)
 
 rand_array = np.random.rand(4, 4)
 
-merged = tf.summary.merge_all()
-
-writer = tf.summary.FileWriter("/tmp/variable_logs", sess.graph_def)
 
 print(sess.run(y, feed_dict={x: rand_array}))
