@@ -58,10 +58,6 @@ rnorm_var = tf.random_normal([row_dim, col_dim], mean=0.0, stddev=1.0)
 # Add summaries to tensorboard
 merged = tf.summary.merge_all()
 
-# Initialize graph writer:
-
-writer = tf.summary.FileWriter("/tmp/variable_logs", graph=sess.graph)
-
 # Initialize operation
 initialize_op = tf.global_variables_initializer()
 
